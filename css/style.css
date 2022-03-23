@@ -1133,3 +1133,22 @@ section {
 .visorpro{
   display: none;
 }
+.reg-form{
+  display: inline-block;
+}
+.headerTit{
+  margin-top: 100px;
+  font-size: 3rem;
+  text-align: center;
+
+}
+.headerTit input {
+  width: 30rem;
+  border: none;
+  border-bottom: 1px solid #bac34e;
+}
+.headerTit input[type=submit] {
+  width: 20rem;
+  border: none;
+
+}
