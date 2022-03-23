@@ -96,19 +96,23 @@
 
 <section class="headerTit">
 
-   <form action="php/usuarios.php" class="login-form">
+   <form action="php/usuarios.php" class="login-form" method="post">
     <h3>Regístrate</h3>
-    <input type="text" placeholder="Nombre" class="box">
+    <input type="text" placeholder="Nombre" name="nombre" maxlength="30" minlength="5" title="solo letras. 
+    Tamaño mínimo 5" class="box" required>
     <br>
-    <input type="text" placeholder="Apellido" class="box">
+    <input type="text" placeholder="Apellido" class="box" name="apellido" maxlength="30" minlength="5" title="solo letras. 
+    Tamaño mínimo 5" required>
     <br>
-    <input type="email" placeholder="introducir correo" class="box">
+    <input type="email" placeholder="Correo" class="box" name="correo" maxlength="30" minlength="5" title="solo letras. 
+    Tamaño mínimo 5" required>
     <br>
-    <input type="password" placeholder="introducir contraseña" class="box">
+    <input type="password" placeholder="Contraseña" class="box" name="password" maxlength="20" minlength="5" title=" 
+    Tamaño mínimo 5" required>
     <br>
 
     
-    <input type="submit" value="registrarse ahora" class="btn">
+    <button class="btn" name="submit"> Registrarse</button>
     
 </form>
 

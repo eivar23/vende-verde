@@ -32,7 +32,7 @@
         <div id="menu-btn" class="fas fa-bars"></div>
         <div id="search-btn" class="fas fa-search" style="display: none"></div>
         <div id="cart-btn" class="fas fa-shopping-cart"></div>
-        <div id="login-btn" class="fas fa-user"></div>
+        <div id="login-btn" class="fas fa-user"><p>juana</p></div>
     </div>
 
     <form action="" class="search-form">
@@ -75,10 +75,10 @@
         <a href="#" class="btn">verificar carrito</a>
     </div>
 
-    <form action="" class="login-form">
+    <form action="php/login.php" class="login-form" method="post">
         <h3>Iniciar sesión</h3>
-        <input type="email" placeholder="introducir correo" class="box">
-        <input type="password" placeholder="introducir contraseña" class="box">
+        <input type="email" placeholder="introducir correo" name="correo" class="box" required>
+        <input type="password" placeholder="introducir contraseña" name="password" class="box" required>
         <div class="remember">
             <input type="checkbox" name="" id="remember-me">
             <label for="remember-me">recuérdame</label>

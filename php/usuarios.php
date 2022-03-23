@@ -1,23 +1,36 @@
 <?php
-// Connect to MySQL
-$link = mysql_connect('localhost', 'root', '12345678');
-if (!$link) {
-    die('conexión fallida: ' . mysql_error());
-}
 
-// Make my_db the current database
-$db_selected = mysql_select_db('BDverde', $link);
+	$username = "root";
+	$host ="localhost";
+	$password = "12345678";
+	$bd = "bdverde";
 
-if (!$db_selected) {
-  // If we couldn't, then it either doesn't exist, or we can't see it.
-  $sql = 'CREATE DATABASE BDverde';
 
-  if (mysql_query($sql, $link)) {
-      echo "base de datos BDverde creada\n";
-  } else {
-      echo 'Error al crear base de datos: ' . mysql_error() . "\n";
-  }
-}
+	$nombre =$_POST['nombre'];
+	$apellido = $_POST['apellido'];
+	$correo = $_POST['correo'];
+	$pass = $_POST['password'];
 
-mysql_close($link);
+
+
+	$con = new mysqli("$host", "$username", "$password", "$bd");
+
+	if ($con->connect_error) {
+		die("conexion fallida". $con->connect_error); 
+	}
+
+
+	$sql = "INSERT INTO `usuarios` (`nombre`, `apellido`, `correo`, `pass`) 
+    
+	VALUES ('$nombre', '$apellido', '$correo', '$pass')";
+
+	if (mysqli_query($con,$sql)){
+		echo "datos guardados correctamente";
+	}else {
+		echo "Error al guardar datos: ".$sql. mysqli_error($con);
+			
+	}
+
+	mysqli_close($con)
+
 ?>
