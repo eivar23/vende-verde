@@ -32,7 +32,7 @@
         <div id="menu-btn" class="fas fa-bars"></div>
         <div id="search-btn" class="fas fa-search" style="display: none"></div>
         <div id="cart-btn" class="fas fa-shopping-cart"></div>
-        <div id="login-btn" class="fas fa-user"><p>juana</p></div>
+        <div id="login-btn" class="fas fa-user"></div>
     </div>
 
     <form action="" class="search-form">
