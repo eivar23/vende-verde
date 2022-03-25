@@ -1,28 +1,28 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home</title>
+    <title>contact</title>
 
-    <!-- font awesome  -->
+    <!-- font awesome link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-    <!-- estilos -->
+    <!-- estilos link  -->
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
     
-<!-- header section starts  -->
+<!-- inicio del header  -->
 
 <header class="header">
 
-       <a href="index.html" class="logo"> <img class="logoV" src="image/logo.png"> Vende verde </a>
+     <a href="home.php" class="logo"> <img class="logoV" src="image/logo.png"> Vende verde </a>
 
     <nav class="navbar">
-        <a href="index.html">inicio</a>
+        <a href="index.php">inicio</a>
         <a href="tienda.html">tienda</a>
         <a href="info.html">Quienes somos</a>
         <a href="contacto.html">contacto</a>
@@ -36,11 +36,11 @@
     </div>
 
     <form action="" class="search-form">
-        <input type="search" placeholder="Buscar..." id="search-box">
+        <input type="search" placeholder="search here..." id="search-box">
         <label for="search-box" class="fas fa-search"></label>
     </form>
 
-    <div class="shopping-cart">
+      <div class="shopping-cart">
         <div class="box">
             <i class="fas fa-times"></i>
             <img src="image/prod-pitaya.jpg" alt="">
@@ -75,7 +75,7 @@
         <a href="#" class="btn">verificar carrito</a>
     </div>
 
-    <form action="" class="login-form">
+ <form action="" class="login-form">
         <h3>Iniciar sesión</h3>
         <input type="email" placeholder="introducir correo" class="box">
         <input type="password" placeholder="introducir contraseña" class="box">
@@ -85,38 +85,81 @@
         </div>
         <input type="submit" value="registrarse ahora" class="btn">
         <p>olvidé mi contraseña? <a href="#">clic Aquí</a></p>
-        <p>Aún no estás registrado? <a href="registro.html">crear cuenta</a></p>
+        <p>Aún no estás registrado? <a href="#">crear cuenta</a></p>
     </form>
 
 </header>
 
-<!-- fin del header -->
+<!-- fin deln header -->
 
+<div class="heading">
+    <h1>contáctanos</h1>
+    <p> <a href="home.html">Inicio >></a> contacto </p>
+</div>
 
+<section class="contact">
 
-<section class="headerTit">
+    <div class="icons-container">
 
-   <form action="php/usuarios.php" class="login-form" method="post">
-    <h3>Regístrate</h3>
-    <input type="text" placeholder="Nombre" name="nombre" maxlength="30" minlength="5" title="solo letras. 
-    Tamaño mínimo 5" class="box" required>
-    <br>
-    <input type="text" placeholder="Apellido" class="box" name="apellido" maxlength="30" minlength="5" title="solo letras. 
-    Tamaño mínimo 5" required>
-    <br>
-    <input type="email" placeholder="Correo" class="box" name="correo" maxlength="30" minlength="5" title="solo letras. 
-    Tamaño mínimo 5" required>
-    <br>
-    <input type="password" placeholder="Contraseña" class="box" name="password" maxlength="20" minlength="5" title=" 
-    Tamaño mínimo 5" required>
-    <br>
+        <div class="icons">
+            <i class="fas fa-phone"></i>
+            <h3>Nuestros números</h3>
+            <p>+123-456-7890</p>
+            <p>311-222-5333</p>
+        </div>
 
-    
-    <button class="btn" name="submit"> Registrarse</button>
-    
-</form>
+        <div class="icons">
+            <i class="fas fa-envelope"></i>
+            <h3>Correos</h3>
+            <p>vendo-verde@gmail.com</p>
+            <p>verde-atencion@gmail.com</p>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>Dirección</h3>
+            <p>Tunja, Colombia</p>
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <form action="">
+            <h3>Envíanos un mensaje</h3>
+            <div class="inputBox">
+                <input type="text" placeholder="nombre" class="box">
+                <input type="email" placeholder="correo" class="box">
+            </div>
+            <div class="inputBox">
+                <input type="number" placeholder="número" class="box">
+                <input type="text" placeholder="Tema" class="box">
+            </div>
+            <textarea placeholder="mensaje" cols="30" rows="10"></textarea>
+            <input type="submit" value="Enviar mensaje" class="btn">
+        </form>
+
+           <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.1014324770113!2d-73.35884268603733!3d5.551978995974519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6a7c3d644e3cd9%3A0x3c1e6f4e767244da!2sUPTC%2C%20Universidad%20Pedag%C3%B3gica%20y%20Tecnol%C3%B3gica%20de%20Colombia!5e0!3m2!1ses!2sco!4v1637781279168!5m2!1ses!2sco" allowfullscreen="" loading="lazy"></iframe>
+
+    </div>
 
 </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -132,7 +175,7 @@
 
         <div class="box">
             <h3>Enlaces rápidos</h3>
-            <a href="index.html"> <i class="fas fa-arrow-right"></i> Inicio</a>
+            <a href="home.php"> <i class="fas fa-arrow-right"></i> Inicio</a>
             <a href="shop.html"> <i class="fas fa-arrow-right"></i> Tienda</a>
             <a href="about.html"> <i class="fas fa-arrow-right"></i> Quienes somos</a>
             <a href="contact.html"> <i class="fas fa-arrow-right"></i> contacto</a>

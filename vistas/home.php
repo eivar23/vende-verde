@@ -23,8 +23,8 @@
        <a href="index.html" class="logo"> <img class="logoV" src="image/logo.png"> Vende verde </a>
 
     <nav class="navbar">
-        <a href="index.html">inicio</a>
-        <a href="tienda.html">tienda</a>
+        <a href="index.php">inicio</a>
+        <a href="vistas/tienda.html">tienda</a>
         <a href="info.html">Quienes somos</a>
         <a href="contacto.html">contacto</a>
     </nav>
@@ -33,7 +33,22 @@
         <div id="menu-btn" class="fas fa-bars"></div>
         <div id="search-btn" class="fas fa-search" style="display: none"></div>
         <div id="cart-btn" class="fas fa-shopping-cart"></div>
-        <div id="login-btn" class="fas fa-user"><?php echo $user->getNombre()?></div>
+        <div id="login-btn" class="fas fa-user"></div>
+        <div id="login-in" class="fas">
+        <?php echo $user->getNombre();
+            if($user->getNombre() !== null){
+                echo '  <select>
+                <option disabled="disabled" selected="true"></option>
+                <option>perfil</option>
+                <option>cargar productos</option>
+                <option>cerrar sesión</option>
+                </select>';
+            }
+        
+        ?>
+             
+
+            </div>
     </div>
 
     <form action="" class="search-form">

@@ -1,28 +1,28 @@
-!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>about</title>
+    <title>home</title>
 
-    <!-- font awesome link-->
+    <!-- font awesome  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-    <!-- estilos link  -->
+    <!-- estilos -->
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
     
-<!-- header -->
+<!-- header section starts  -->
 
 <header class="header">
 
-    <a href="index.html" class="logo"> <img class="logoV" src="image/logo.png"> Vende verde </a>
+       <a href="index.php" class="logo"> <img class="logoV" src="image/logo.png"> Vende verde </a>
 
     <nav class="navbar">
-        <a href="index.html">inicio</a>
+        <a href="index.php">inicio</a>
         <a href="tienda.html">tienda</a>
         <a href="info.html">Quienes somos</a>
         <a href="contacto.html">contacto</a>
@@ -36,11 +36,11 @@
     </div>
 
     <form action="" class="search-form">
-        <input type="search" placeholder="search here..." id="search-box">
+        <input type="search" placeholder="Buscar..." id="search-box">
         <label for="search-box" class="fas fa-search"></label>
     </form>
 
-  <div class="shopping-cart">
+    <div class="shopping-cart">
         <div class="box">
             <i class="fas fa-times"></i>
             <img src="image/prod-pitaya.jpg" alt="">
@@ -85,110 +85,38 @@
         </div>
         <input type="submit" value="registrarse ahora" class="btn">
         <p>olvidé mi contraseña? <a href="#">clic Aquí</a></p>
-        <p>Aún no estás registrado? <a href="#">crear cuenta</a></p>
+        <p>Aún no estás registrado? <a href="registro.html">crear cuenta</a></p>
     </form>
 
 </header>
 
 <!-- fin del header -->
 
-<div class="heading">
-    <h1>Quienes somos</h1>
-    <p> <a href="home.html">Inicio >></a> Quienes somos </p>
-</div>
 
-<section class="about">
 
-    <div class="image">
-        <img src="image/about-img.jpeg" alt="">
-    </div>
+<section class="headerTit">
 
-    <div class="content">
-        <span>Bienvenido a Vende verde</span>
-        <span>, Lo mejor para tu canasta</span>
-        <p>...La tienda agrícola con los precios más bajos y los envíos mas rápidos</p>
-        <p>Vende Verde es una iniciativa que surge bajo la necesidad de contribuir a que nuestros campesinos puedan comerciar sus alimentos a precios justos, eliminando intermediarios y garantizando que sea el productor quien vea el valor agregado de su trabajo</p>
-        <p>Nuestra historia se cuenta también a través de don José, doña Rebeca, don Libardo y de todos nuestros campesinos, que madrugan a trabajar día a día, para que podamos tener nuestro plato sobre la mesa. Te invitamos a conocer nuestras historias... </p>
-    </div>
+   <form action="php/usuarios.php" class="login-form" method="post">
+    <h3>Regístrate</h3>
+    <input type="text" placeholder="Nombre" name="nombre" maxlength="30" minlength="5" title="solo letras. 
+    Tamaño mínimo 5" class="box" required>
+    <br>
+    <input type="text" placeholder="Apellido" class="box" name="apellido" maxlength="30" minlength="5" title="solo letras. 
+    Tamaño mínimo 5" required>
+    <br>
+    <input type="email" placeholder="Correo" class="box" name="correo" maxlength="30" minlength="5" title="solo letras. 
+    Tamaño mínimo 5" required>
+    <br>
+    <input type="password" placeholder="Contraseña" class="box" name="password" maxlength="20" minlength="5" title=" 
+    Tamaño mínimo 5" required>
+    <br>
 
-</section>
-
-<section class="gallery">
-
-    <h1 class="title"> Nuestras <span>historias</span> </h1>
-
-    <div class="box-container">
-
-        <div class="box">
-            <img src="image/gallery-img-1.jpg" alt="">
-            <div class="icons">
-                <a href="#" class="fas fa-eye"></a>
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-share-alt"></a>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="image/gallery-img-2.jpg" alt="">
-            <div class="icons">
-                <a href="#" class="fas fa-eye"></a>
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-share-alt"></a>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="image/gallery-img-3.jpg" alt="">
-            <div class="icons">
-                <a href="#" class="fas fa-eye"></a>
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-share-alt"></a>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="image/gallery-img-4.jpg" alt="">
-            <div class="icons">
-                <a href="#" class="fas fa-eye"></a>
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-share-alt"></a>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="image/gallery-img-5.jpg" alt="">
-            <div class="icons">
-                <a href="#" class="fas fa-eye"></a>
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-share-alt"></a>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="image/gallery-img-6.jpg" alt="">
-            <div class="icons">
-                <a href="#" class="fas fa-eye"></a>
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-share-alt"></a>
-            </div>
-        </div>
-
-    </div>
+    
+    <button class="btn" name="submit"> Registrarse</button>
+    
+</form>
 
 </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
