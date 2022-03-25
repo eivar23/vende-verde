@@ -25,8 +25,8 @@
     <nav class="navbar">
         <a href="index.php">inicio</a>
         <a href="vistas/tienda.html">tienda</a>
-        <a href="info.html">Quienes somos</a>
-        <a href="contacto.html">contacto</a>
+        <a href="vistas/info.html">Quienes somos</a>
+        <a href="vistas/contacto.html">contacto</a>
     </nav>
 
     <div class="icons">
@@ -101,7 +101,7 @@
         </div>
         <input type="submit" value="iniciar sesión" class="btn">
         <p>olvidé mi contraseña? <a href="#">clic Aquí</a></p>
-        <p>Aún no estás registrado? <a href="registro.html">crear cuenta</a></p>
+        <p>Aún no estás registrado? <a href="vistas/registro.html">crear cuenta</a></p>
     </form>
 
 </header>
