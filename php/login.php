@@ -1,7 +1,7 @@
 <?php
     session_start();
 
-    $username = "root";
+  $username = "root";
 	$host ="localhost";
 	$password = "12345678";
 	$bd = "bdverde";
