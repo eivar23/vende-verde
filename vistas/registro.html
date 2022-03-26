@@ -75,17 +75,17 @@
         <a href="#" class="btn">verificar carrito</a>
     </div>
 
-    <form action="" class="login-form">
+    <form action="" class="login-form" method="post">
         <h3>Iniciar sesión</h3>
-        <input type="email" placeholder="introducir correo" class="box">
-        <input type="password" placeholder="introducir contraseña" class="box">
+        <input type="text" placeholder="introducir correo" name="username" class="box" required>
+        <input type="password" placeholder="introducir contraseña" name="password" class="box" required>
         <div class="remember">
             <input type="checkbox" name="" id="remember-me">
             <label for="remember-me">recuérdame</label>
         </div>
-        <input type="submit" value="registrarse ahora" class="btn">
+        <input type="submit" value="iniciar sesión" class="btn">
         <p>olvidé mi contraseña? <a href="#">clic Aquí</a></p>
-        <p>Aún no estás registrado? <a href="registro.html">crear cuenta</a></p>
+        <p>Aún no estás registrado? <a href=registro.html">crear cuenta</a></p>
     </form>
 
 </header>
