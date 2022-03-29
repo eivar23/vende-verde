@@ -35,6 +35,7 @@
         <div id="search-btn" class="fas fa-search"></div>
         <div id="cart-btn" class="fas fa-shopping-cart"></div>
         <div id="login-btn" class="fas fa-user"></div>
+      
     </div>
 
     <form action="" class="search-form">

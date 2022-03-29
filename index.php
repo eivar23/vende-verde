@@ -10,6 +10,7 @@ if(isset($_SESSION['user'])){
 	//echo "Hay sesión";
 	$user->setUser($userSession->get_current_user());
 	include_once ' vistas/home.php';
+	
 }else if(isset($_POST['username']) && isset($_POST['password'])){
 	//echo "validacion de login";
 
@@ -23,6 +24,7 @@ if(isset($_SESSION['user'])){
 		$user->setUser($userForm);
 
 		include_once 'vistas/home.php';
+		
 	}else{
 		//echo "nombre de usuario o contraseña incorrecto";
 		$errorLogin = "nombre de usuario y/o pass es incorrecto";

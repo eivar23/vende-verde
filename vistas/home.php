@@ -1,4 +1,3 @@
-<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -24,7 +23,7 @@
 
     <nav class="navbar">
         <a href="index.php">inicio</a>
-        <a href="vistas/tienda.html">tienda</a>
+        <a href="vistas/tienda.php">tienda</a>
         <a href="vistas/info.html">Quienes somos</a>
         <a href="vistas/contacto.html">contacto</a>
     </nav>
